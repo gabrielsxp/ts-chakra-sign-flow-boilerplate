@@ -23,8 +23,6 @@ const Navbar = () => {
   const user = useSelector(({ userReducer }: ReducersProps) => userReducer.user)
   const router = useRouter()
 
-  console.log('user: ', user)
-
   useEffect(() => {
     if (!user) {
       const hasUser = localStorage.getItem('user')

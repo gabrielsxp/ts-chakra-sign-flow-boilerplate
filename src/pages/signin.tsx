@@ -24,14 +24,10 @@ const SignIn = () => {
   const signIn = async (values: ValuesProps) => {
     setLoading(true)
     try {
-      const response = await axios.post(
-        '/auth/local',
-        {
-          ...values,
-          identifier: values.email
-        },
-        { headers: { Authorization: '' } }
-      )
+      const response = await axios.post('/auth/local', {
+        ...values,
+        identifier: values.email
+      })
       if (response.data) {
         console.log(response.data)
       }
