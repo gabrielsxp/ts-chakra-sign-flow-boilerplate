@@ -1,5 +1,9 @@
-import Main from 'components/Main'
+import HomeTemplate from 'templates/HomeTemplate'
 
 export default function Home() {
-  return <Main />
+  return (
+    <>
+      <HomeTemplate />
+    </>
+  )
 }
